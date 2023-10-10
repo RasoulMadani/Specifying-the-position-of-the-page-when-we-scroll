@@ -267,6 +267,11 @@
         section = document.querySelector("main > section");
         _sec = section.clientHeight - _main.clientHeight;
       });
+      window.addEventListener("load", (event) => {
+        _main = document.getElementsByTagName("main")[0];
+        section = document.querySelector("main > section");
+        _sec = section.clientHeight - _main.clientHeight;
+      });
 
       _main.addEventListener("scroll", (e) => {
         let st = e.target.scrollTop;
